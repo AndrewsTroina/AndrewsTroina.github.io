@@ -61,16 +61,19 @@ footer {
   text-align: center;
 }
 
-/* Adicione o seguinte código */
 .container {
+  display: flex;
   flex-direction: row;
+  flex: 1;
 }
 
 nav {
-  height: 100%;
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 20px;
 }
 
 .content {
+  padding: 20px;
   flex: 1;
-  overflow: auto;
 }
