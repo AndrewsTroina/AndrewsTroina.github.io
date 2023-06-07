@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -20,6 +22,11 @@ header h1 {
 .email {
   font-size: 18px;
   color: #e0e0e0;
+}
+
+.container {
+  display: flex;
+  flex: 1;
 }
 
 nav {
@@ -45,4 +52,5 @@ nav ul li a {
 
 .content {
   padding: 20px;
+  flex: 1;
 }
