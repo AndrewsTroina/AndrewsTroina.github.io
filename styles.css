@@ -1,4 +1,4 @@
-body { 
+body {
   margin: 0;
   padding: 0;
   display: flex;
@@ -61,17 +61,16 @@ footer {
   text-align: center;
 }
 
+/* Adicione o seguinte código */
 .container {
-  display: flex;
+  flex-direction: row;
 }
 
-aside {
-  width: 200px;
-  background-color: #f1f1f1;
-  padding: 20px;
+nav {
+  height: 100%;
 }
 
-main {
+.content {
   flex: 1;
-  padding: 20px;
+  overflow: auto;
 }
