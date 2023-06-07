@@ -33,15 +33,15 @@ nav {
   width: 200px;
   background-color: #f1f1f1;
   padding: 20px;
-  position: sticky;
-  top: 0;
-  bottom: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  flex-grow: 1;
 }
 
 nav ul li {
@@ -62,4 +62,23 @@ footer {
   background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+nav {
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 20px;
+  flex: 1;
 }
