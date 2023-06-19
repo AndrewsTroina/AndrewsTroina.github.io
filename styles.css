@@ -1,10 +1,20 @@
+:root {
+	--color1: #fdfdfd; /*#FB7015;*/
+	--color2: #020202;
+	--color3: #fdfdfd;
+	--email:  #333;
+	--links:  #555;
+	--3d1:	  cyan; /* cold */
+	--3d2:	  red; /* hot */
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
-  background-color: #fff;
+  background-color: var(--color2);
   /*background-color: #06123A;*/
-  color: #000;
+  color: var(--color3);
   font-size: 18px;
 }
 
@@ -14,39 +24,51 @@ header {
 }
 
 header h1 {
-  letter-spacing: 1px;
-  font-size: 55px;
+  letter-spacing: 3px;
+  font-size: 100px; /* 55px; */
   margin: 0;
   font-family: 'Josefin Sans', sans-serif; 
-  color: #FB7015; /* Define a cor do texto */
+  color: var(--color3); /* Define a cor do texto */
+  text-shadow: -4px 0 1px var(--3d1), 4px 0 1px var(--3d2);
 }
 
-h2 {
+h1, h2 {
+  text-overflow: clip;
+}
+
+h2{
+  letter-spacing: 1px;
   margin: 0px;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Josefin Sans', sans-serif; 
+  text-shadow: -2px 0 1px var(--3d1), 2px 0 1px var(--3d2);
+}
+
+a{
+  color: var(--links);
+  text-decoration: underline;
 }
 
 .white-bg {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--color2);
+  color: var(--color3);
 }
 
 .white-bg h2 {
-  color: #FB7015;
+  color: var(--color1);
 }
 
 .color-bg {
-  background-color: #FB7015;
-  color: #fff;
+  background-color: var(--color1);
+  color: var(--color2);
 }
 
 .color-bg h2 {
-  color: #fff;
+  color: var(--color2);
 }
 
 .email {
   font-size: 18px;
-  color: #333;
+  color: var(--email);
 }
 
 .container {
@@ -82,13 +104,13 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #222;
+  color: var(--links);
   font-style: bold;
   /*font-size: 22px;*/
 }
 
 .content {
-	height: 550px;
+  /* height: 550px; */
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 270px;
@@ -101,7 +123,8 @@ nav ul li a {
 }
 
 .pacifico {
-  font-size: 20px;
+  letter-spacing: 3px;
+  font-size: 30px;
   font-family: 'Pacifico', cursive;
 }
 
